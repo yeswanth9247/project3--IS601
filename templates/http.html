@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTTP</title>
+    <link rel="stylesheet" href="css/suchicustom.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="javascript/suchijs.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img class="navbar-brand" src="images/logo.svg" alt="logo image">
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                    <li class="dropdown, active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-fw fa-wrench"></i>Topics
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="internethistory.html"><b>The Internet</b></a></li>
+                            <li><a href="webserver.html">Web Server</a></li>
+                            <li><a href="ipanddns.html">IP Address and DNS</a></li>
+                            <li><a href="http.html">HTTP</a></li>
+                            <li><a href="dotcombubble.html">Dot-com bubble</a></li>
+                            <li><a href="browserwars.html">Browser Wars</a></li>
+                            <li><a href="tcpip.html">TCP/IP</a></li>
+                            <li><a href="arpanet.html">ARPANET</a></li>
+                            <li><a href="history.html">HISTORY</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="about.html"><i class="fa fa-fw fa-user"></i>About</a></li>
+                    <li><a href="contactus.html"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Navbar -->
+
+        <!-- Background image -->
+
+        <!-- Background image -->
+
+    </header>
+    <div class="container-fluid text-center">
+
+
+        <div class="row content">
+            <div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="webserver.html"><b>HTTP</b></a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2>HTTP</h2>
+                        <h3>Hypertext Transfer Protocol</h3>
+                        <div class="fakeimg"><img height="100" width="400" src="images/http1.png" alt="http image">
+                        </div>
+                        <p class="left">HTTP is a client-server protocol: requests are sent by one entity, the user-agent (or a proxy on behalf of it). Most of the time the user-agent is a Web browser, but it can be anything, for example, a robot that crawls the Web to populate and maintain a search engine index.
+
+                            Each individual request is sent to a server, which handles it and provides an answer called the response. Between the client and the server there are numerous entities, collectively called proxies, which perform different operations and act as gateways or caches,
+                            <span id="dots">...</span><span id="more">
+                                In reality, there are more computers between a browser and the server handling the request: there are routers, modems, and more. Thanks to the layered design of the Web, these are hidden in the network and transport layers. HTTP is on top, at the application layer. Although important for diagnosing network problems, the underlying layers are mostly irrelevant to the description of HTTP.
+                                <img src="images/htttp2.gif" alt="http"/>
+                                </span>
+                            <button class="btn btn-info" onclick="myFunction()" id="myBtn">Read more</button>
+                        </p>
+                        <p class="left"></p>
+
+                        <hr class="d-sm-none">
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>HTTP</h2>
+                        <h2>Hypertext Transfer Protocol</h2>
+                        <div class="fakeimg"><img height="300" width="600" src="images/http3.png"
+                                                  alt="http image"></div>
+                        <p class="left">HTTP is a protocol for fetching resources such as HTML documents. It is the foundation of any data exchange on the Web and it is a client-server protocol, which means requests are initiated by the recipient, usually the Web browser. A complete document is reconstructed from the different sub-documents fetched, for instance, text, layout description, images, videos, scripts, and more.
+                            Clients and servers communicate by exchanging individual messages (as opposed to a stream of data). The messages sent by the client, usually a Web browser, are called requests and the messages sent by the server as an answer are called responses.
+                            </p>
+
+                        <div class="fakeimg"><img width="500" height="400" src="images/http4.png"
+                                                  alt="image of DNS basic working"></div>
+                        <h3>Client: the user-agent</h3>
+                        <p class="left">The user-agent is any tool that acts on behalf of the user. This role is primarily performed by the Web browser, but it may also be performed by programs used by engineers and Web developers to debug their applications.
+
+                            The browser is always the entity initiating the request. It is never the server (though some mechanisms have been added over the years to simulate server-initiated messages).
+
+                            To display a Web page, the browser sends an original request to fetch the HTML document that represents the page. It then parses this file, making additional requests corresponding to execution scripts, layout information (CSS) to display, and sub-resources contained within the page (usually images and videos). The Web browser then combines these resources to present the complete document, the Web page. Scripts executed by the browser can fetch more resources in later phases and the browser updates the Web page accordingly.
+
+                            A Web page is a hypertext document. This means some parts of the displayed content are links, which can be activated (usually by a click of the mouse) to fetch a new Web page, allowing the user to direct their user-agent and navigate through the Web. The browser translates these directions into HTTP requests, and further interprets the HTTP responses to present the user with a clear response.</p>
+
+                        <h3>The Web server</h3>
+
+                        <p class="left">On the opposite side of the communication channel is the server, which serves the document as requested by the client. A server appears as only a single machine virtually; but it may actually be a collection of servers sharing the load (load balancing), or a complex piece of software interrogating other computers (like cache, a DB server, or e-commerce servers), totally or partially generating the document on demand.
+
+                            A server is not necessarily a single machine, but several server software instances can be hosted on the same machine. With HTTP/1.1 and the Host header, they may even share the same IP address.</p>
+                   <h3>Proxies</h3>
+                        <p class="left">Between the Web browser and the server, numerous computers and machines relay the HTTP messages. Due to the layered structure of the Web stack, most of these operate at the transport, network or physical levels, becoming transparent at the HTTP layer and potentially having a significant impact on performance. Those operating at the application layers are generally called proxies. These can be transparent, forwarding on the requests they receive without altering them in any way, or non-transparent, in which case they will change the request in some way before passing it along to the server. Proxies may perform numerous functions:
+
+                            <h5 class="left"><b>Caching (the cache can be public or private, like the browser cache)</b></h5>
+                        <h5 class="left"><b>Filtering (like an antivirus scan or parental controls)</b></h5>
+                            <h5 class="left"><b>Boad balancing (to allow multiple servers to serve different requests)</b></h5>
+                                <h5 class="left"><b>Authentication (to control access to different resources)</b></h5>
+                                    <h5 class="left"><b>Logging (allowing the storage of historical information)</b></h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+
+
+            Yeswanth Sai &#169;
+        <a href="w3cvalidator/http@wec.html">W3C Validator</a>
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+        </div>
+        <div>
+            <a href="https://www.facebook.com" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/SuchiKhare/project1" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+    </footer>
+</div>
+</body>
+</html>

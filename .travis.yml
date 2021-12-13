@@ -1,0 +1,18 @@
+language: python
+python:
+  - "3.9"
+install:
+  - pip install -r requirements.txt
+# command to run tests
+script:
+  - pytest  --pylint --cov
+
+branches:
+  only:
+    - main
+    - development
+    - calc_part2
+    - part4
+    - part5_myTake
+    - csv_reading
+    - web_calculator

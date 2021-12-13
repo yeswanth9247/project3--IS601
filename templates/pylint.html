@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>PYLINT</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1 id="logo"><a href="index.html">Project-3</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="calculator.html">CALCULATOR</a></li>
+						<li><a href="oop.html">OBJECT ORIENTED PROGRAMMING</a></li>
+						<li><a href="aaa.html">AAA TESTING</a></li>
+						<li><a href="oopincal.html">OOP IN CALCULATOR</a></li>
+						<li><a href="pylint.html">PYLINT</a></li>
+						<li><a href="seperation.html">SEPERATION OF CONCERNS</a></li>
+						<a href="index..html"><b>PROJECT1</b></a>
+					</ul>
+				</nav>
+			</header>
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>PYLINT</h2>
+						</header>
+
+						<!-- Content -->
+							<section id="content">
+								<h2>WHAT IS PYLINT ?</h2>
+								<ul>
+									<li>Pylint is a tool that checks for errors in Python code, tries to enforce
+										a coding standard and looks for code smells. It can also look for certain
+										type errors, it can recommend suggestions about how particular blocks can be
+										refactored and can offer you details about the code's complexity.</li>
+									<li>Pylint is desgined to check your code in order to see if it meets the general
+										standards of how Python code should be written. If your code works well, but
+										looks messy and is nearly impossible to read, then you will have problems
+										in the future. Pylint will give you warnings on what is missing in your code
+										and adjustments that should be made to improve readability.</li>
+									<li>One of the greatest tools one must know when coding in python is Pylint.
+										Pylint is a Python static code analysis tool that looks for programming errors,
+										helps enforce a coding standard, sniffs for code smells, and offers simple
+										refactoring suggestions. It’s highly configurable, having special pragmas
+										to control its errors and warnings from within your code, as well as from an
+										extensive configuration file. It is also possible to write your own plugins
+										for adding your own checks or for extending pylint in one way or another.
+										As Pylint is “Static”, it means that it won’t execute your code,
+										it will just parse it to find mistakes or things that do not
+										respect a given coding style.</li>
+								</ul>
+
+								<h2>HOW TO CONFIGURE PYLINT</h2>
+								<ul>
+									<li>Open a Command Prompt or Terminal. On Windows, navigate to the Python root
+										directory (install location)</li>
+									<li>Run the following command: python -m pip install pylint.</li>
+									<li>Note the location of the pylint executable: Windows - pylint.exe should be in
+										the
+										Scripts folder (Python root directory)</li>
+								</ul>
+
+								<h2>CALCULATOR PROJECT -PYLINT CONFIGURATION</h2>
+								<ul>
+									<li>configure pylintrc in root directory</li>
+									<li>pip install -r requirements.txt</li>
+									<li>requirement.txt has packages needs to be installed such as pytest-cov (for
+										coverage of the code)
+										, pytest , pycodestyle and pytest-pylint
+									</li>
+								</ul>
+
+								<table class="table table-striped" style="font-size:18px">
+									<thead>
+									<tr>
+										<th>Pylint category</th>
+										<th>Description</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>Convention (C)</td>
+										<td>[C]onvention for coding standard violation</td>
+
+									</tr>
+									<tr>
+										<td>Refactor (R)</td>
+										<td>[R]efactor for a “good practice” metric violation</td>
+
+									</tr>
+									<tr>
+										<td>Warning (W)</td>
+										<td>[W]arning for stylistic problems, or minor programming issues</td>
+
+									</tr>
+									<tr>
+										<td>Error (E)</td>
+										<td>[E]rror for important programming issues (i.e. most probably bug)</td>
+
+									</tr>
+									<tr>
+										<td>Fatal (F)</td>
+										<td>[F]atal for errors which prevented further processing</td>
+
+									</tr>
+									</tbody>
+								</table>
+
+								<h2>PYLINT IN CALCULATOR CODE</h2>
+								<ul>
+									<li>Examples of disabling pylint from the code instead of pylintrc configuration
+										file
+									</li>
+									<li># pylint: disable=too-few-public-methods</li>
+
+									<li># pylint: disable=redefined-outer-name</li>
+								</ul>
+								<p class="grw-font"><b>Example in calculator.py</p></b>
+								<ul style="list-style-type:none;">
+									<li>class Calculator:</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;"""calculator class"""</li>
+
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;<b># pylint: disable=too-few-public-methods</b></li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;@staticmethod</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;def add_numbers(tuple_elements: tuple):</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""adds elements in tuple"""
+									</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculations.add_addition_calculation(tuple_elements)</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return True</li>
+								</ul>
+								<p class="grw-font"><b>Example in calculator_history_test.py</p></b>
+								<ul style="list-style-type:none;">
+
+									<li>@pytest.fixture</li>
+									<li>def clear_history_fixture():</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;"""fixture method will run each time passed to the
+										test"""
+									</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;<b># pylint: disable=redefined-outer-name</b></li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;Calculations.clear_history()</li>
+								</ul>
+							</section>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; YESWANTH SAI</li>
+						<br>
+						<br>
+						<a href="w3c.html">W3C</a>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

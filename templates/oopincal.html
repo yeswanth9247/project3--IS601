@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>OOP IN CAL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1 id="logo"><a href="index.html">Project-3</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="calculator.html">CALCULATOR</a></li>
+						<li><a href="oop.html">OBJECT ORIENTED PROGRAMMING</a></li>
+						<li><a href="aaa.html">AAA TESTING</a></li>
+						<li><a href="oopincal.html">OOP IN CALCULATOR</a></li>
+						<li><a href="pylint.html">PYLINT</a></li>
+						<li><a href="seperation.html">SEPERATION OF CONCERNS</a></li>
+						<a href="index..html"><b>PROJECT1</b></a>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>OOP IN CALCULATOR</h2>
+
+						</header>
+
+						<!-- Content -->
+							<section id="content">
+							<h2>MAIN CONCEPTS OF OBJECT-ORIENTED PROGRAMMING (OOPS)</h2>
+								<ul style="font-size:20px">
+									<li>Encapsulation: Grouping of Information</li>
+									<li>Inheritance: Sharing of Information</li>
+									<li>Polymorphism: Redefining of Information</li>
+									<li>Abstraction: Hiding of Information</li>
+								</ul>
+
+								<h2>Encapsulation</h2>
+								<p>
+									Encapsulation is one of the fundamental concepts in object-oriented programming (OOP). It describes the idea of
+									wrapping data and the methods that work on data within one unit. This puts restrictions on accessing variables and
+									methods directly and can prevent the accidental modification of data. To prevent accidental change, an object’s
+									variable can only be changed by an object’s method. Those types of variables are known as private variable.
+									<br>
+									Protected members (in C++ and JAVA) are those members of the class that cannot be accessed outside the class but
+									can be accessed from within the class and its subclasses. To accomplish this in Python, just follow the convention
+									by prefixing the name of the member by underscore “_”.
+
+									<br>
+									<br>
+									<b>Example of Encapsulation using the Calculation Class in Calculator Program</b>
+									<br>
+									<img src="images/i8.png"  height="500" width="600" />
+								<p style="font-size:19px">
+									In the Calculation class of the Calculator program, we are using the def __init__ which is a reserved method in
+									python classes. It is called as a constructor in object-oriented terminology. This method is called when an
+									object is created from a class, and it allows the class to initialize the attributes of the class.<br>
+									When a single "_" is used, that signifies a private variable, as we cannot explicitly define private in Python.
+									The "_values" is the nomenclature for encapsulation in the Calculation class.<br>
+									We set the values as a tuple which means that they cannot be changed once applied.
+									The values in the calculation class cannot be changed
+									from outside and thus the above example clearly demonstrates Encapsulation
+
+								</p>
+								<ul style="list-style-type:none;">
+									<li>class <b>Operation:</b></li>
+									<li>"""Base class"""</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, values: tuple):</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.<b>_values</b> =
+										Operation.convert_cal_input_to_float(values)
+									</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>class <b>Addition(Operation, Result)</b>:</li>
+									<li>"""subclass Addition extending base Operation"""</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;def get_output(self):</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""Adds the elements in
+										tuple"""
+									</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum_of_elements = 0.0</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for value in <b>self._values</b>:
+									</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum_of_elements
+										= sum_of_elements + value
+									</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return sum_of_elements</li>
+								</ul>
+
+								<h2>Inheritance</h2>
+								<p style="font-size:19px">
+									Inheritance is the capability of one class to derive or inherit the properties from another class.
+									Inheritance provides re-usability of a code. We don’t have to write the same code again and again. Also,
+									it allows us to add more features to a class without modifying it. It is also transitive in nature, which
+									means that if class B inherits from another class A, then all the subclasses of B would automatically inherit
+									from class A.
+									<br>
+
+									<br>
+									<b>Example of Encapsulation using the Addition Class in Calculator Program</b>
+
+								</p>
+									<img src="images/i9.png"  height="800" width="600" />
+
+								</p>
+								<p style="font-size:19px">
+									In the above addition class, we are creating a function that will give us the sum of two or more values. This Addition class
+									can now be inherited in other classes, we would not need to write the code to add two or more numbers again and
+									the class can be inherited in other classes and be reused again and again.
+									</p>
+								<p style="font-size:19px">
+									Here we can see that the Addition class has been inherited by the Calculator class, and we are able to add two or more
+									numbers in a completely different class i.e. the calculator class. In this case, the Addition class is the Parent class
+									while the Calculator class is the child class.
+									This is especially useful as different classes can be created
+									for each of the calculator functions of addition, subtraction, multiplication and division. And then all of these classes can be
+									inherited by the Calculator class.
+								</p>
+								<ul style="list-style-type:none;">
+									<li>class <b>Operation:</b></li>
+									<li>"""Base class"""</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, values: tuple):</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.<b>_values</b> =
+										Operation.convert_cal_input_to_float(values)
+									</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>class <b>Addition(Operation, Result)</b>:</li>
+									<li>"""subclass Addition extending base Operation"""</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;def get_output(self):</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""Adds the elements in
+										tuple"""
+									</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum_of_elements = 0.0</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for value in <b>self._values</b>:
+									</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum_of_elements
+										= sum_of_elements + value
+									</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return sum_of_elements</li>
+								</ul>
+
+								<h2>Polymorphism</h2>
+								<p style="font-size:19px">
+									The word polymorphism means having many forms. In programming, polymorphism means the same function name
+									(but different signatures) being used for different types.
+									<br>
+									In Python, Polymorphism lets us define methods in the child class that have the same name as the methods in
+									the parent class. In inheritance, the child class inherits the methods from the parent class.
+									<br><br>
+									<b>Example of Polymorphism using the Multiplication Class in Calculator Program</b>
+
+								</p>
+								<img src="images/i10.png"  height="300" width="600" />
+								<img src="images/i11.png"  height="300" width="600" />
+								<img src="images/i12.png"  height="300" width="600" />
+								<img src="images/i13.png"  height="300" width="600" />
+
+								</p>
+								<p style="font-size:19px">
+									In all the classes i.e. Addition, Subtraction, Multiplication and Division we use the get_result method. The get_result
+									method has been used by all the classes to perform different functions. We can thus see that the get_result function is
+									taking multiple forms. This is the demonstration of Polymorphism in Calculator program.
+								</p>
+								<ul style="list-style-type:none;">
+									<li>class <b>Operation:</b></li>
+									<li>"""Base class"""</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, values: tuple):</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.<b>_values</b> =
+										Operation.convert_cal_input_to_float(values)
+									</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>class <b>Result:</b></li>
+									<li>"""Base class"""</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;@abstractmethod</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def get_output(self):
+									</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>class <b>Addition(Operation, Result)</b>:</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;"""subclass Addition extending base Operation"""</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;def <b>get_output(self):</b></li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""Adds the elements in
+										tuple"""
+									</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum_of_elements = 0.0</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for value in <b>self._values</b>:
+									</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum_of_elements
+										= sum_of_elements <b>+</b> value
+									</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return sum_of_elements</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>class <b>Subtraction(Operation, Result)</b>:</li>
+									<li>"""subclass Subtraction extending base Operation"""</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;def <b>get_output(self):</b></li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""subtracts the elements in
+										tuple"""
+									</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diff_of_elements = 0.0</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for value in <b>self._values</b>:
+									</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;diff_of_elements
+										= diff_of_elements <b>-</b> value
+									</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return diff_of_elements</li>
+								</ul>
+
+								<h2>Abstraction</h2>
+								<p style="font-size:19px">
+									An abstract class can be considered as a blueprint for other classes. It allows you to create a set of methods
+									that must be created within any child classes built from the abstract class. A class which contains one or more
+									abstract methods is called an abstract class. An abstract method is a method that has a declaration but does not
+									have an implementation. While we are designing large functional units we use an abstract class. When we want to
+									provide a common interface for different implementations of a component, we use an abstract class.
+									<br>
+									By default, Python does not provide abstract classes. Python comes with a module that provides the base for
+									defining Abstract Base classes(ABC) and that module name is ABC. ABC works by decorating methods of the base class
+									as abstract and then registering concrete classes as implementations of the abstract base. A method becomes abstract
+									when decorated with the keyword @abstractmethod.
+									<br><br>
+									<b>Example of Abstraction using the Calculation Class in Calculator Program</b>
+
+								</p>
+								<img src="images/i14.png"  height="900" width="600" />
+								</p>
+								<p style="font-size:19px">
+									The Calculation class is an abstract base class itself.
+									Here we have created an abstract method i.e. get_result(), which on its own does not give any result, but we saw that
+									the get_result() method is used in the child classes Addition, Subtraction, Multiplication and Division.
+								</p>
+								<ul style="list-style-type:none;">
+
+									<li>"""Abstract class"""</li>
+									<li>from abc import abstractmethod, ABC</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>class <b>Result(ABC)</b>:</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;"""result for all the operations"""</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;# pylint: disable=too-few-public-methods</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;<b>@abstractmethod</b></li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;def <b>get_output(self)</b>:</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""this is the abstract method
+										to be implemented by impl classes"""
+									</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>"""Class for Addition Operation"""</li>
+									<li>from calc.calculations.operation import Operation</li>
+									<li>from calc.calculations.result import Result</li>
+								</ul>
+								<ul style="list-style-type:none;">
+
+									<li>class <b>Addition</b>(Operation, <b>Result)</b>:</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;"""subclass Addition extending base Operation"""</li>
+								</ul>
+								<ul style="list-style-type:none;">
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;def <b>get_output(self)</b>:</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""Adds the elements in
+										tuple"""
+									</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum_of_elements = 0.0</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for value in self._values:</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum_of_elements
+										=
+										sum_of_elements + value
+									</li>
+									<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return sum_of_elements</li>
+
+								</ul>
+
+							</section>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; YESWANTH SAI</li>
+					<br><br>
+					<a href="w3c.html">W3C</a>
+				</ul>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

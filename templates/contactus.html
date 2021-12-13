@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ContactUs</title>
+    <link rel="stylesheet" href="css/suchistyle.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img class="navbar-brand" src="images/logo.svg" alt="logo image">
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-fw fa-wrench"></i>Topics
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="internethistory.html">The Internet</a></li>
+                            <li><a href="webserver.html">Web Server</a></li>
+                            <li><a href="ipanddns.html">IP Address and DNS</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="about.html"><i class="fa fa-fw fa-user"></i>About</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Navbar -->
+
+        <!-- Background image -->
+
+        <!-- Background image -->
+
+    </header>
+    <div class="container-fluid text-center">
+    </div>
+<section class="mb-4">
+
+    <!--Section heading-->
+    <div align="center">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="contactus.html"><b>ContactUs</b></a></li>
+            </ol>
+        </nav>
+    </div>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Suchi Khare, NJ, USA</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 862 000 0000</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>sk368@njit.edu</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <div>
+        SuchiKhare &#169;
+    </div>
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+    </div>
+
+    <div>
+        <a href="https://www.facebook.com" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/SuchiKhare/IS601Project1" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</footer>
+</div>
+</body>
+</html>

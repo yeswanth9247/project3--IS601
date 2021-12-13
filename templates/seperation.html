@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>OOP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+<div id="page-wrapper">
+
+	<!-- Header -->
+	<header id="header">
+		<h1 id="logo"><a href="index.html">Project-3</a></h1>
+		<nav id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="calculator.html">CALCULATOR</a></li>
+				<li><a href="oop.html">OBJECT ORIENTED PROGRAMMING</a></li>
+				<li><a href="aaa.html">AAA TESTING</a></li>
+				<li><a href="oopincal.html">OOP IN CALCULATOR</a></li>
+				<li><a href="pylint.html">PYLINT</a></li>
+				<li><a href="seperation.html">SEPERATION OF CONCERNS</a></li>
+				<a href="index..html"><b>PROJECT1</b></a>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Main -->
+	<div id="main" class="wrapper style1">
+		<div class="container">
+			<header class="major">
+				<h2>SEPERATION OF CONCERNS</h2>
+			</header>
+
+			<!-- Content -->
+			<section id="content">
+				<img src="images/i15.JPG"  height="500" width="400"   /></a>
+				<p>
+					Object-oriented programming is a methodology for writing an organized, cohesive program. The core principles of
+					OOP all imply a minimum level of organization in which to write a program. To exaggerate the point, you wouldn't
+					keep your apples and your toolset in the same cabinet would you? You would keep the apples in the kitchen with
+					the other fruits while your toolset would go in the garage with your other tools. Likewise, you wouldn't build
+					a workshop in the kitchen and cook in the garage. In programming, this organization of like goes with like is
+					what is known as the separation of concerns. Similar to encapsulation, a program should always strive to divide
+					up work based on certain tasks.
+				</p>
+					<li>The Seperation of Concerns concept is used in the Calculator program in such a way that the class calculator
+						is divided into seperate classes like addition, subtraction, multiplication and division.</li>
+					<li> The class calculation in the program Calculation has the declaration of the object and the variables and the class is used as a parameters to the other classes
+						like addition, subtraction, multiplication and division.</li>
+					<li> The program Calculator_test is used to write the custom test cases for the calculator. </li>
+					<li> The program Main is used to define the methods for the operations of the calculator.</li>
+					<li> The program Addition is used to perform the addition operation.</li
+					<li> The program Subtraction is used to perform the subtraction operation.</li>
+					<li> The program Multiplication is used to perform the multiplication operation.</li>
+					<li> The program Division is used to perform the division operation.</li>
+					<li> THe program Calculator is used to declare the methods and print the end result of the calculator.</li>
+
+
+				</ul>
+
+				<br>
+				<p>This stage of employer may additionally seem tedious or overemphasized. The importance, however, of a nicely-prepared and
+					properly-written application can not be overstated. To supply a extra realistic instance, I'll seek advice from the calculator's report
+					shape (shown above) that has been stated in preceding articles. While now not proven inside the preceding examples, pictured
+					above is the record-structure of the calculator's code. Here, you may see a standard calculator file, with 2 documents
+					within alongside a calculator.Py record and an __init__.Py report. Already, a trendy enterprise shape can
+					be visible from the files. The calculator.Py report is the primary document in which all of the paintings comes collectively. Further, a
+					calculations folder and a records folder can be discovered inner, where the calculations' folder is in fee of the
+					math element of the calculator and the history folder is in price of the lesser capability of the calculator.
+					This separation of challenge is beneficial mainly for reusing code. Say you are writing every other software with
+					calculator functionality. Instead of getting to parse through disorganized documents and refactor code, you'll be
+					capable of reproduction and paste the existing folders into your new initiatives, and with small tweaks for your code, you would
+					be capable of copy and paste your calculator in a totally extraordinary challenge.</p>
+
+				<h3>SEPERATION OF CONCERN IN CALCULATOR PROGRAM</h3>
+				<p>
+					SOC is used in the Calculator Program such that the program is broken into distinct features
+					that overlap in functionality as little as possible. We have broken the original problem
+					of creating a Calculator to perform Addition into four independent tasks:
+				</p>
+				<img src="images/i16.png"  height="450" width="600" />
+				<br>
+				<img src="images/i17.png"  height="300" width="600" />
+				<br>
+				<img src="images/i19.png"  height="200" width="600" />
+				<br>
+				<img src="images/i18.png"  height="150" width="600" />
+				<p>
+					In all the above four, all the classes have been
+					separated by function, the get_result is first defined in a different class Calculation and then gives us the result of the addition, the add_calculation adds the calculation to history
+					and the add_numbers function calls the other two functions together to finally create the proper calculator
+					functionality. The four separate classes come together to form the Calculator program, but each action or concern				</p>
+
+			</section>
+
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<ul class="icons">
+			<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+			<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+			<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+			<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+		</ul>
+		<ul class="copyright">
+			<li>&copy; YESWANTH SAI</li>
+			<br>
+			<br>
+			<a href="w3c.html">W3C</a>
+		</ul>
+	</footer>
+
+</div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
