@@ -12,7 +12,7 @@ pytest  --pylint --cov
 setup.py is a config file for pytest
 
 ![video](static/is601finalproject.mp4)
-![image](cal1.PNG)
+![image](cal1.png)
 ![image](cal2.PNG)
 ![image](cal3.PNG)
 ![image](cal4.PNG)
