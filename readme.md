@@ -21,6 +21,8 @@ setup.py is a config file for pytest
 ![image](pylint03.JPG)
 ![image](cal1.png)
 ![image](cal2.png)
+![image](table_1.jpeg)
+![image](table_2.jpeg)
 ![image](table_result.JPG)
 ![image](cal3.png)
 ![image](cal4.png)
